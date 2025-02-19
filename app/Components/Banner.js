@@ -1,8 +1,8 @@
-const PrinterBanner = () => {
+const Banner = () => {
     return (
       <div className="mb-8">
         <div
-          className="bg-white mx-auto w-[92%] sm:w-[90%] md:w-[87%] bg-cover bg-center rounded-lg flex items-center mt-1 md:mt-3"
+          className="bg-white mx-auto w-[1230px] m-auto sm:w-[90%] md:w-[87%] bg-cover bg-center rounded-lg flex items-center mt-1 md:mt-3"
           style={{
             backgroundImage:
               "url(https://static.vecteezy.com/system/resources/thumbnails/019/946/760/small/dark-blue-smoke-background-navy-blue-watercolor-and-paper-texture-beautiful-dark-gradient-hand-drawn-by-brush-grunge-background-watercolor-wash-aqua-painted-texture-close-up-background-with-rays-vector.jpg)", 
@@ -29,5 +29,5 @@ const PrinterBanner = () => {
     );
   };
   
-  export default PrinterBanner;
+  export default Banner;
   

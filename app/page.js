@@ -12,6 +12,7 @@ import 'tailwindcss/tailwind.css';
 import ParticlesBackground from "./Components/ParticlesBackground";
 import Slider from "./Components/PrinterSlider";
 import Banner from "./Components/Banner";
+import ContentSection from "./Components/ContentSection";
 
 
 
@@ -28,6 +29,7 @@ export default function Home() {
   </div>
   <Slider/>
   <Banner/>
+  <ContentSection/>
      
     </>
   );
