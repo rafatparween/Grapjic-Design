@@ -4,7 +4,7 @@ import { useEffect, useRef, useState } from "react";
 import { motion } from "framer-motion";
 
 const headings = [
-  "Hewlett Printer Solutions - Your Online Printing Partner",
+  "Micro-Sonic - Your Online Printing Partner",
   "Smart Printing Solutions for Every Business Need",
   "Effortless Printing, Maximum Efficiency",
   "High-Quality Printers for Home & Office Use",

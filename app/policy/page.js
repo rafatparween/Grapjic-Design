@@ -1,7 +1,12 @@
+import Footer from "../Components/Footer";
+import Navbar from "../Components/Navbar";
+
 export default function Policy() {
   return (
+    <>
+    <Navbar/>
     <div className="container mx-auto px-4 py-16  bg-gradient-to-r from-[#2558a2] via-[#1e8cd8] to-[#00aaff] antialiased bg-grid-white/[0.02] text-white">
-      <h2 className="text-3xl font-bold text-white mb-8 text-center 2xl:mt-[-5px]">Policy</h2>
+      <h2 className="text-3xl font-bold text-white mb-8 text-center mt-[40px]">Policy</h2>
       <div className="space-y-8 text-white">
         
         <section>
@@ -73,5 +78,7 @@ export default function Policy() {
         
       </div>
     </div>
+    <Footer/>
+    </>
   );
 }

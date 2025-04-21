@@ -24,9 +24,9 @@ export default function RootLayout({ children }) {
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
-        <Navbar /> {/* Navbar should be rendered before children */}
+        {/* <Navbar /> Navbar should be rendered before children */}
         <main>{children}</main> {/* Main content area for the children */}
-        <Footer /> {/* Footer should be at the bottom of the page */}
+        {/* <Footer /> Footer should be at the bottom of the page */}
       </body>
     </html>
   );

@@ -19,6 +19,7 @@ import ContentSection from "./Components/ContentSection";
 export default function Home() {
   return (
     <>
+    <Navbar/>
       {/* <Header/> */}
       {/* <Support/>
       <DataContent/> */}
@@ -30,6 +31,7 @@ export default function Home() {
   <Slider/>
   <Banner/>
   <ContentSection/>
+  <Footer/>
      
     </>
   );

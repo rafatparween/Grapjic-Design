@@ -1,7 +1,11 @@
 import React from 'react';
+import Navbar from '../Components/Navbar';
+import Footer from '../Components/Footer';
 
 export default function Disclaimer() {
   return (
+    <>
+    <Navbar/>
     <div className="min-h-screen bg-gradient-to-r from-[#2558a2] via-[#1e8cd8] to-[#00aaff] antialiased bg-grid-white/[0.02] overflow-hidden">
       <div className="absolute inset-0 flex flex-wrap items-center justify-center">
         {[...Array(50)].map((_, index) => (
@@ -34,5 +38,7 @@ export default function Disclaimer() {
         </p>
       </div>
     </div>
+    <Footer/>
+    </>
   );
 }

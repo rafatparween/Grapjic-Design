@@ -1,3 +1,4 @@
+import Footer from "../Components/Footer";
 import Diagnose from "./pages/Digonose";
 import PageHeader from "./pages/PageHeader";
 import PageNavbar from "./pages/PageNavbar";
@@ -10,6 +11,7 @@ export default function Home() {
       <PageHeader/>
       <Troubleshoot/>
       <Diagnose/>
+      <Footer/>
 
        
       </>

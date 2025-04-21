@@ -1,71 +1,104 @@
-import React from 'react';
+// components/MicroSonicShowcase.jsx
+'use client';
+import Footer from "../Components/Footer";
+import Navbar from "../Components/Navbar";
 
-const CustomLayout = () => {
+ // Mark as Client Component if using Next.js 13+
+
+const MicroSonicShowcase = () => {
+  const features = [
+    {
+      icon: '⚡',
+      title: 'Lightning Fast',
+      description: 'Next.js optimized for instant page loads',
+      color: 'from-amber-400 to-amber-600'
+    },
+    {
+      icon: '🎨',
+      title: 'Pixel Perfect',
+      description: 'Tailwind CSS crafted designs',
+      color: 'from-purple-400 to-purple-600'
+    },
+    {
+      icon: '📱',
+      title: 'Fully Responsive',
+      description: 'Flawless on all devices',
+      color: 'from-blue-400 to-blue-600'
+    },
+    {
+      icon: '🚀',
+      title: 'Modern Stack',
+      description: 'Next.js + Tailwind CSS',
+      color: 'from-pink-400 to-pink-600'
+    }
+  ];
+
   return (
     <>
-      <h2 className="text-4xl font-bold text-center font-poppins text-[#0C71C3] mt-[53px] mb-[-87px]">About Us</h2>
-      <div className="w-full bg-white">
-        <div className="max-w-screen-xl mx-auto p-8 md:p-16 flex flex-col md:flex-row gap-8 items-center">
-          {/* Left Column - Images */}
-          <div className="w-full md:w-2/5 flex gap-4">
-            <div className="flex-shrink-0 w-[280px] h-[460px]">
-              <img
-                src="/abottwo.avif"
-                
-                alt="Digital Marketing"
-                className="w-full h-full rounded-lg object-cover"
-              />
-            </div>
-
-            <div className="flex flex-col gap-4 w-[280px] h-[460px]">
-              <img
-                src="/aboutthree.jpg"
-                alt="Marketing Strategy"
-                className="w-full h-1/2 rounded-lg object-cover"
-              />
-              <img
-                src="/aboutone.jpg"
-                alt="Team Collaboration"
-                className="w-full h-1/2 rounded-lg object-cover"
-              />
-            </div>
-          </div>
-
-          {/* Right Column - Text */}
-          <div className="w-full md:w-3/5 flex flex-col justify-center font-poppins">
-            <h2 className="text-gray-900 text-2xl md:text-4xl font-bold mt-2 leading-snug">
-              Your Ultimate Partner in Digital Marketing Success
-            </h2>
-            <p className="text-gray-600 mt-4 text-lg leading-relaxed">
-              At Digital Marketing Experts, we specialize in creating tailored marketing strategies that drive results. 
-              From SEO and content marketing to social media management and PPC campaigns, our experienced team delivers 
-              comprehensive solutions that elevate your brand's online presence.
-            </p>
-
-            {/* Stats Section */}
-            <div className="flex items-start mt-6 gap-12">
-              <div className="text-center">
-                <div className="gradient-text text-4xl font-bold">500+</div>
-                <p className="text-gray-600">Happy Clients</p>
-              </div>
-              <p className="text-gray-600 text-lg leading-relaxed">
-                We take pride in our proven track record of helping businesses achieve their digital marketing goals. 
-                Join our community of satisfied clients and experience unparalleled growth.
-              </p>
-            </div>
-
-            {/* Button */}
-            <button 
-              className="bg-gradient-to-r from-[#2558a2] via-[#1e8cd8] to-[#00aaff] antialiased bg-grid-white/[0.02] mt-6 text-black px-6 py-3 rounded-lg shadow-md text-lg font-semibold hover:bg-orange-600"
-              
-            >
-              Discover More
-            </button>
-          </div>
-        </div>
+    <Navbar/>
+    <div className="min-h-screen bg-gradient-to-br from-gray-900 to-gray-800 py-20 px-4 sm:px-6 lg:px-8">
+      {/* Header */}
+      <div className="max-w-7xl mx-auto text-center mb-16">
+        <h1 className="text-4xl md:text-6xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-cyan-400 to-blue-500 mb-6 mt-[30px]">
+          Micro-Sonic
+        </h1>
+        <p className="text-xl text-gray-300 max-w-3xl mx-auto">
+        At Micro Sonic, we are passionate about creating seamless digital experiences that are not only powerful under the hood but also visually captivating. Built on cutting-edge technologie
+        </p>
       </div>
+
+      {/* Features Grid */}
+      <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+        {features.map((feature, index) => (
+          <div 
+            key={index}
+            className={`bg-gradient-to-br ${feature.color} rounded-2xl p-0.5 shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-[1.02]`}
+          >
+            <div className="bg-gray-900 rounded-2xl p-6 h-full flex flex-col">
+              <div className="text-4xl mb-4">{feature.icon}</div>
+              <h3 className="text-xl font-bold text-white mb-2">{feature.title}</h3>
+              <p className="text-gray-300 flex-grow">{feature.description}</p>
+              <div className="mt-4 pt-4 border-t border-gray-700">
+                <button className="text-sm font-medium text-white hover:underline">
+                  Learn more →
+                </button>
+              </div>
+            </div>
+          </div>
+        ))}
+      </div>
+
+      {/* CTA Section */}
+      <div className="max-w-2xl mx-auto mt-20 text-center">
+        <h2 className="text-3xl font-bold text-white mb-6">Ready to experience Micro-Sonic?</h2>
+        <button className="relative px-8 py-4 rounded-full bg-gradient-to-r from-cyan-500 to-blue-600 text-white font-bold overflow-hidden group">
+          <span className="relative z-10">Get Started Now</span>
+          <span className="absolute inset-0 bg-gradient-to-r from-blue-600 to-cyan-500 opacity-0 group-hover:opacity-100 transition-opacity duration-300"></span>
+        </button>
+        <p className="mt-4 text-gray-400">Free forever. No credit card required.</p>
+      </div>
+
+      {/* Animated Background Elements */}
+      <div className="fixed top-0 left-0 w-full h-full overflow-hidden -z-10 pointer-events-none">
+        {[...Array(10)].map((_, i) => (
+          <div 
+            key={i}
+            className="absolute rounded-full bg-blue-500/10"
+            style={{
+              width: `${Math.random() * 300 + 100}px`,
+              height: `${Math.random() * 300 + 100}px`,
+              top: `${Math.random() * 100}%`,
+              left: `${Math.random() * 100}%`,
+              filter: 'blur(40px)',
+              animation: `float ${Math.random() * 20 + 10}s infinite alternate`
+            }}
+          />
+        ))}
+      </div>
+    </div>
+    <Footer/>
     </>
   );
 };
 
-export default CustomLayout;
+export default MicroSonicShowcase;
