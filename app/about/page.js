@@ -1,95 +1,71 @@
 import React from 'react';
 
-export default function About() {
+const CustomLayout = () => {
   return (
-    <div className="bg-gray-100 min-h-screen pt-16 ">
-      {/* Hero Section */}
-      <header className="bg-blue-600 text-white py-16  ">
-        <div className="container mx-auto px-4 text-center">
-          <h1 className="text-4xl font-bold mb-4 text-white">Welcome to Hewlett Printer Solution Online</h1>
-          <p className="text-lg">
-            Revolutionizing the way you think about printing and design services.
-          </p>
-        </div>
-      </header>
-
-      {/* About Section */}
-      <section className="py-16">
-        <div className="container mx-auto px-4">
-          <h2 className="text-3xl font-bold text-center mb-8 text-[#2563EB]">Our Story</h2>
-          <p className="text-lg leading-relaxed text-gray-700 mb-8">
-            At Hewlett Printer Solution Online, we pride ourselves on delivering innovative, high-quality printing solutions to individuals and businesses alike. 
-            Founded with the vision of combining technology with creativity, we have become a trusted name in the printing industry. Our journey began with a 
-            small team of designers and developers who believed in the power of technology to transform the printing experience. Today, we serve thousands of 
-            clients globally, offering customized printing solutions for every need.
-          </p>
-        </div>
-      </section>
-
-      {/* Mission Section */}
-      <section className="bg-gray-200 py-16 text-black">
-        <div className="container mx-auto px-4">
-          <h2 className="text-3xl font-bold text-center mb-8 text-[#2563EB]">Our Mission</h2>
-          <p className="text-lg leading-relaxed text-gray-700 mb-8">
-            Our mission is to make printing simple, accessible, and affordable for everyone. 
-            Whether you're a small business owner, a student, or a corporate organization, Hewlett Printer Solution Online is here to meet your printing needs with precision and care.
-          </p>
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-            <div className="bg-white p-6 shadow-md rounded-lg">
-              <h3 className="text-xl font-semibold mb-4">Customer-Centric</h3>
-              <p>We prioritize our customers' needs and ensure the highest level of satisfaction in every project we handle.</p>
+    <>
+      <h2 className="text-4xl font-bold text-center font-poppins text-[#0C71C3] mt-[53px] mb-[-87px]">About Us</h2>
+      <div className="w-full bg-white">
+        <div className="max-w-screen-xl mx-auto p-8 md:p-16 flex flex-col md:flex-row gap-8 items-center">
+          {/* Left Column - Images */}
+          <div className="w-full md:w-2/5 flex gap-4">
+            <div className="flex-shrink-0 w-[280px] h-[460px]">
+              <img
+                src="/abottwo.avif"
+                
+                alt="Digital Marketing"
+                className="w-full h-full rounded-lg object-cover"
+              />
             </div>
-            <div className="bg-white p-6 shadow-md rounded-lg">
-              <h3 className="text-xl font-semibold mb-4">Eco-Friendly Solutions</h3>
-              <p>We are committed to using sustainable materials and eco-friendly practices to minimize our environmental impact.</p>
-            </div>
-            <div className="bg-white p-6 shadow-md rounded-lg">
-              <h3 className="text-xl font-semibold mb-4">Innovation-Driven</h3>
-              <p>By leveraging the latest technology, we deliver cutting-edge printing services to our clients.</p>
+
+            <div className="flex flex-col gap-4 w-[280px] h-[460px]">
+              <img
+                src="/aboutthree.jpg"
+                alt="Marketing Strategy"
+                className="w-full h-1/2 rounded-lg object-cover"
+              />
+              <img
+                src="/aboutone.jpg"
+                alt="Team Collaboration"
+                className="w-full h-1/2 rounded-lg object-cover"
+              />
             </div>
           </div>
-        </div>
-      </section>
 
-      {/* Services Section */}
-      <section className="py-16">
-        <div className="container mx-auto px-4 text-black">
-          <h2 className="text-3xl font-bold text-center mb-8 text-[#2563EB]">What We Offer</h2>
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-            <div className="bg-white p-6 shadow-md rounded-lg">
-              <h3 className="text-xl font-semibold mb-4">Custom Printing</h3>
-              <p>
-                From business cards to banners, we offer a wide range of customizable printing solutions tailored to your needs.
+          {/* Right Column - Text */}
+          <div className="w-full md:w-3/5 flex flex-col justify-center font-poppins">
+            <h2 className="text-gray-900 text-2xl md:text-4xl font-bold mt-2 leading-snug">
+              Your Ultimate Partner in Digital Marketing Success
+            </h2>
+            <p className="text-gray-600 mt-4 text-lg leading-relaxed">
+              At Digital Marketing Experts, we specialize in creating tailored marketing strategies that drive results. 
+              From SEO and content marketing to social media management and PPC campaigns, our experienced team delivers 
+              comprehensive solutions that elevate your brand's online presence.
+            </p>
+
+            {/* Stats Section */}
+            <div className="flex items-start mt-6 gap-12">
+              <div className="text-center">
+                <div className="gradient-text text-4xl font-bold">500+</div>
+                <p className="text-gray-600">Happy Clients</p>
+              </div>
+              <p className="text-gray-600 text-lg leading-relaxed">
+                We take pride in our proven track record of helping businesses achieve their digital marketing goals. 
+                Join our community of satisfied clients and experience unparalleled growth.
               </p>
             </div>
-            <div className="bg-white p-6 shadow-md rounded-lg">
-              <h3 className="text-xl font-semibold mb-4">Graphic Design</h3>
-              <p>
-                Our talented team of designers can help you create stunning visuals for your brand or personal projects.
-              </p>
-            </div>
-            <div className="bg-white p-6 shadow-md rounded-lg">
-              <h3 className="text-xl font-semibold mb-4">Fast Delivery</h3>
-              <p>
-                We ensure timely delivery without compromising on quality, so your projects are always on schedule.
-              </p>
-            </div>
+
+            {/* Button */}
+            <button 
+              className="bg-gradient-to-r from-[#2558a2] via-[#1e8cd8] to-[#00aaff] antialiased bg-grid-white/[0.02] mt-6 text-black px-6 py-3 rounded-lg shadow-md text-lg font-semibold hover:bg-orange-600"
+              
+            >
+              Discover More
+            </button>
           </div>
         </div>
-      </section>
-
-      {/* Call to Action Section */}
-      <section className="bg-blue-600 text-white py-16">
-        <div className="container mx-auto px-4 text-center">
-          <h2 className="text-3xl font-bold mb-4">Ready to Get Started?</h2>
-          <p className="text-lg mb-8">
-            Join thousands of satisfied customers who trust Hewlett Printer Solution Online for all their printing and design needs.
-          </p>
-          <button className="bg-white text-blue-600 font-semibold py-2 px-6 rounded shadow hover:bg-gray-100">
-            Contact Us
-          </button>
-        </div>
-      </section>
-    </div>
+      </div>
+    </>
   );
-}
+};
+
+export default CustomLayout;

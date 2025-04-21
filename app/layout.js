@@ -14,8 +14,8 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata = {
-  title: "hewlett-printer-solution.online",
-  description: "hewlett-printer-solution.online",
+  title: "Micro-Sonic",
+  description: "Micro-Sonic",
 };
 
 export default function RootLayout({ children }) {

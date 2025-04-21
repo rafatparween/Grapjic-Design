@@ -1,85 +1,38 @@
-import Head from "next/head";
+import React from 'react';
 
-const Disclaimer = () => {
+export default function Disclaimer() {
   return (
-    <>
-      <Head>
-        <title>Disclaimer | Hewlett Printer Solution Online</title>
-        <meta name="description" content="Disclaimer page for Hewlett Printer Solution Online" />
-      </Head>
-
-      <div className="bg-gradient-to-r from-blue-500 via-teal-600 to-indigo-700 min-h-screen py-12 px-6 md:px-12 pt-16">
-        {/* Increase the width by changing max-w-3xl to max-w-5xl */}
-        <div className="max-w-5xl mx-auto bg-white p-8 rounded-lg shadow-md">
-          <h1 className="text-3xl font-semibold text-center text-[#2563EB] mb-8">
-            Disclaimer
-          </h1>
-          <div className="space-y-6 text-gray-700">
-            <p>
-              The information provided by Hewlett Printer Solution Online (“we,” “us,” or “our”) on
-              this website (the “Site”) is for general informational purposes
-              only. All information on the Site is provided in good faith, and
-              we make no representations or warranties of any kind, express or
-              implied, regarding the accuracy, adequacy, validity, reliability,
-              availability, or completeness of any information on the Site.
-            </p>
-
-            <p>
-              Under no circumstance shall we have any liability to you for any
-              loss or damage of any kind incurred as a result of the use of the
-              Site or reliance on any information provided on the Site. Your use
-              of the Site and your reliance on any information on the Site is
-              solely at your own risk.
-            </p>
-
-            <h2 className="text-2xl font-semibold text-gray-800 mt-8">
-              External Links Disclaimer
-            </h2>
-            <p>
-              The Site may contain (or you may be sent through the Site) links
-              to other websites or content belonging to or originating from
-              third parties. Such external links are not investigated, monitored,
-              or checked for accuracy, adequacy, validity, reliability, or
-              completeness by us. We do not warrant, endorse, guarantee, or
-              assume responsibility for the accuracy or reliability of any
-              information offered by third-party websites linked through the
-              Site.
-            </p>
-
-            <h2 className="text-2xl font-semibold text-gray-800 mt-8">
-              Professional Disclaimer
-            </h2>
-            <p>
-              The Site cannot and does not contain professional advice. The
-              legal, financial, or other types of professional advice that may
-              be referenced on the Site is provided for general informational
-              purposes only and is not intended to be a substitute for advice
-              from a qualified professional.
-            </p>
-
-            <p>
-              We recommend consulting a qualified professional before acting
-              upon any information presented on this Site.
-            </p>
-
-            <h2 className="text-2xl font-semibold text-gray-800 mt-8">
-              Changes to the Disclaimer
-            </h2>
-            <p>
-              We reserve the right to amend or update this Disclaimer at any
-              time. Any changes will be posted on this page with an updated
-              revision date. We encourage you to review this Disclaimer
-              periodically to stay informed about any modifications.
-            </p>
-
-            <p className="mt-8 text-center text-gray-600">
-              Last updated: January 24, 2025
-            </p>
-          </div>
-        </div>
+    <div className="min-h-screen bg-gradient-to-r from-[#2558a2] via-[#1e8cd8] to-[#00aaff] antialiased bg-grid-white/[0.02] overflow-hidden">
+      <div className="absolute inset-0 flex flex-wrap items-center justify-center">
+        {[...Array(50)].map((_, index) => (
+          <div
+            key={index}
+            className={`star w-2 h-2 ${Math.random() > 0.5 ? 'left-0' : 'right-0'}`}
+            style={{
+              left: `${Math.random() * 100}vw`,
+              top: `${Math.random() * 100}vh`,
+              animationDelay: `${Math.random() * 1.5}s`,
+              animationDuration: `${Math.random() * 1 + 1.5}s`,
+            }}
+          ></div>
+        ))}
       </div>
-    </>
+      <div className="max-w-4xl mx-auto bg-white p-8 rounded-lg shadow-md mt-20 z-10 relative 2xl:mt-[221px]">
+        <h1 className="mb-6 text-[32px] font-bold text-[#2558a2] cursor-pointer">Disclaimer</h1>
+        <p className="text-gray-700 mb-6">
+          If you require any more information or have any questions about our site’s disclaimer, please feel free to contact us by email at <a href="mailto:support@micro-sonic.com" className="text-blue-600">support@micro-sonic.com</a>.
+        </p>
+        <h2 className="text-2xl font-bold mb-4 text-[32px] font-bold text-[#2558a2] cursor-pointer">Disclaimer for Micro-Sonic</h2>
+        <p className="text-gray-700 mb-6">
+          The information provided by Micro Sonic Work on our website and through our services is for general informational purposes only. While we strive to keep the information accurate and up to date, we make no representations or warranties of any kind, express or implied, about the completeness, accuracy, reliability, suitability, or availability with respect to our website or the information, products, services, or related graphics contained on the website for any purpose. Any reliance you place on such information is therefore strictly at your own risk.
+        </p>
+        <p className="text-gray-700 mb-6">
+          Through our website, you may be able to link to other websites that are not under the control of Micro Sonic Work. We have no control over the nature, content, and availability of those sites. The inclusion of any links does not necessarily imply a recommendation or endorse the views expressed within them.
+        </p>
+        <p className="text-gray-700 mb-6">
+          Micro Sonic Work reserves the right to modify or update this disclaimer at any time. The most current version will be available on our website, and it is your responsibility to review it periodically.
+        </p>
+      </div>
+    </div>
   );
-};
-
-export default Disclaimer;
+}
