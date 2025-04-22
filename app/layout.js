@@ -14,8 +14,8 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata = {
-  title: "Micro-Sonic",
-  description: "Micro-Sonic",
+  title: "Printer-Support",
+  description: "Printer-Support",
 };
 
 export default function RootLayout({ children }) {

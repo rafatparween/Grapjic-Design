@@ -17,13 +17,32 @@ export default function Troubleshoot() {
 
         {/* Right: Text */}
         <div className="lg:w-1/2 text-center lg:text-left">
-          <h1 className="text-5xl font-light mb-6 text-black">
-            Diagnose and solve
-          </h1>
-          <p className="text-lg text-gray-700 leading-relaxed">
-            In this troubleshooting hub, you’ll find the top automated and self-service solutions for common computer and printer problems. Click the tabs to switch between computer and printer topics, then select an issue to view solutions.
-          </p>
-        </div>
+  <div className="flex items-start justify-center lg:justify-start mb-4">
+    {/* Chat Icon (Matching Screenshot) */}
+    <svg
+      xmlns="http://www.w3.org/2000/svg"
+      className="w-[33px] h-[33px] text-black mr-2 mt-[2px]"
+      viewBox="0 0 24 24"
+      fill="currentColor"
+    >
+      <path d="M20 2H4C2.897 2 2 2.897 2 4V18C2 19.103 2.897 20 4 20H18L22 24V4C22 2.897 21.103 2 20 2Z" />
+    </svg>
+
+    {/* Heading (Bold Match) */}
+    <h1 className="text-[33px] font-extrabold text-black">
+      Contact Support – Chat Live
+    </h1>
+  </div>
+
+  {/* Paragraph */}
+  <p className="text-[16px] text-black leading-relaxed mb-2">
+    In this support hub, you’ll find quick access to live assistance for common computer and printer issues.
+  </p>
+  <p className="text-[16px] text-black leading-relaxed">
+    Click the tabs to switch between <span className="font-bold">Computer</span> and <span className="font-bold">Printer</span> topics, then select an issue to start a live chat with a support agent.
+  </p>
+</div>
+
       </div>
 
       {/* Tabs */}
