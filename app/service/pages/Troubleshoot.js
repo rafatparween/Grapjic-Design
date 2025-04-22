@@ -3,7 +3,7 @@ import Image from "next/image";
 export default function Troubleshoot() {
   return (
     <div className="bg-white min-h-screen flex flex-col items-center justify-center px-4 py-10">
-      <div className="flex flex-col lg:flex-row items-center justify-center max-w-7xl w-full mt-[-37px]">
+      <div className="flex flex-col lg:flex-row items-center justify-center max-w-7xl w-full mt-[-169px]">
         {/* Left: Devices */}
         <div className="flex justify-center items-center gap-6 lg:w-1/2 mb-10 lg:mb-0">
           <Image
@@ -18,21 +18,22 @@ export default function Troubleshoot() {
         {/* Right: Text */}
        
         <div className="lg:w-1/2 text-center lg:text-left">
-        <p className="text-[40px] font- text-black mb-2">Diagnose and solve</p>
+        <p className="text-[40px] font- text-black mb-2 mt-[-73px]">Diagnose and solve</p>
   <div className="flex items-start justify-center lg:justify-start mb-4">
     {/* Chat Icon (Matching Screenshot) */}
-    <svg
+    {/* <svg
       xmlns="http://www.w3.org/2000/svg"
       className="w-[33px] h-[33px] text-black mr-2 mt-[2px]"
       viewBox="0 0 24 24"
       fill="currentColor"
     >
       <path d="M20 2H4C2.897 2 2 2.897 2 4V18C2 19.103 2.897 20 4 20H18L22 24V4C22 2.897 21.103 2 20 2Z" />
-    </svg>
+    </svg> */}
+    {/* <img className="h-[30px] width-[30px]" src="https://static.vecteezy.com/system/resources/thumbnails/006/692/321/small/chatting-message-icon-template-black-color-editable-chatting-message-icon-symbol-flat-illustration-for-graphic-and-web-design-free-vector.jpg"/> */}
 
     {/* Heading (Bold Match) */}
     
-    <h1 className="text-[33px] font-extrabold text-black">
+    <h1 className="text-[29px] text-black">
       Contact Support – Chat Live
     </h1>
   </div>
