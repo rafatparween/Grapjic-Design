@@ -3,7 +3,7 @@ import Image from "next/image";
 export default function Troubleshoot() {
   return (
     <div className="bg-white min-h-screen flex flex-col items-center justify-center px-4 py-10">
-      <div className="flex flex-col lg:flex-row items-center justify-center max-w-7xl w-full">
+      <div className="flex flex-col lg:flex-row items-center justify-center max-w-7xl w-full mt-[-37px]">
         {/* Left: Devices */}
         <div className="flex justify-center items-center gap-6 lg:w-1/2 mb-10 lg:mb-0">
           <Image
@@ -16,7 +16,9 @@ export default function Troubleshoot() {
         </div>
 
         {/* Right: Text */}
+       
         <div className="lg:w-1/2 text-center lg:text-left">
+        <p className="text-[40px] font- text-black mb-2">Diagnose and solve</p>
   <div className="flex items-start justify-center lg:justify-start mb-4">
     {/* Chat Icon (Matching Screenshot) */}
     <svg
@@ -29,17 +31,20 @@ export default function Troubleshoot() {
     </svg>
 
     {/* Heading (Bold Match) */}
+    
     <h1 className="text-[33px] font-extrabold text-black">
       Contact Support – Chat Live
     </h1>
   </div>
 
   {/* Paragraph */}
-  <p className="text-[16px] text-black leading-relaxed mb-2">
+  <p className="text-[20px] text-black leading-relaxed mb-2">
     In this support hub, you’ll find quick access to live assistance for common computer and printer issues.
   </p>
-  <p className="text-[16px] text-black leading-relaxed">
-    Click the tabs to switch between <span className="font-bold">Computer</span> and <span className="font-bold">Printer</span> topics, then select an issue to start a live chat with a support agent.
+  <p className="text-[20px] text-black leading-relaxed">
+    Click the tabs to switch between <span className="font-bold">Computer</span> and <span className="font-bold">Printer</span> topics,
+    <br/>
+    Then start a live chat with a support agent.
   </p>
 </div>
 

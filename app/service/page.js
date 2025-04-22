@@ -1,4 +1,5 @@
 import Footer from "../Components/Footer";
+import JivoChat from "../JivoChat";
 import Diagnose from "./pages/Digonose";
 import PageHeader from "./pages/PageHeader";
 import PageNavbar from "./pages/PageNavbar";
@@ -12,6 +13,7 @@ export default function Home() {
       <Troubleshoot/>
       <Diagnose/>
       <Footer/>
+      <JivoChat/>
 
        
       </>

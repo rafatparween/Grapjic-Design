@@ -2,6 +2,7 @@
 'use client';
 import Footer from "../Components/Footer";
 import Navbar from "../Components/Navbar";
+import JivoChat from "../JivoChat";
 
  // Mark as Client Component if using Next.js 13+
 
@@ -97,6 +98,7 @@ const MicroSonicShowcase = () => {
       </div>
     </div>
     <Footer/>
+    <JivoChat/>
     </>
   );
 };

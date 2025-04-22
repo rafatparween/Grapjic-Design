@@ -1,6 +1,7 @@
 import React from 'react';
 import Navbar from '../Components/Navbar';
 import Footer from '../Components/Footer';
+import JivoChat from '../JivoChat';
 
 export default function Disclaimer() {
   return (
@@ -39,6 +40,7 @@ export default function Disclaimer() {
       </div>
     </div>
     <Footer/>
+    <JivoChat/>
     </>
   );
 }

@@ -1,5 +1,6 @@
 import Footer from "../Components/Footer";
 import Navbar from "../Components/Navbar";
+import JivoChat from "../JivoChat";
 
 export default function Policy() {
   return (
@@ -79,6 +80,7 @@ export default function Policy() {
       </div>
     </div>
     <Footer/>
+    <JivoChat/>
     </>
   );
 }
