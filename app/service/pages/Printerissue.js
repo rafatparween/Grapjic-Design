@@ -1,48 +1,48 @@
-export default function Diagnose() {
+export default function Printerissue() {
     const cards = [
       {
-        image: '/image1.svg',
-        title: 'Windows operating system issues',
+        image: '/printer1.svg',
+        title: 'Printer setup issues',
       },
       {
-        image: '/image2.svg',
-        title: 'Battery and adapter issues',
+        image: '/printer2.svg',
+        title: 'Printer offline',
       },
       {
-        image: '/image3.svg',
-        title: 'Computer is slow',
-        link: true,
+        image: '/printer3.svg',
+        title: '/Wireless printer issues'
+      
       },
       {
-        image: '/image4.svg',
-        title: 'Wireless, wired, Bluetooth networking issues',
+        image: '/printer4.svg',
+        title: 'Scanner issues',
       },
       {
-        image: '/image5.svg',
-        title: 'Keyboard, mouse, touchpad, and clickpad issues',
+        image: '/printer5.svg',
+        title: 'Color or black ink not printing',
       },
       {
-        image: '/image6.svg',
-        title: 'Perform an HP System Recovery',
+        image: '/printer6.svg',
+        title: 'Cartridge issues',
       },
       {
-        image: '/image7.svg',
-        title: 'Wireless, wired, Bluetooth networking issues',
+        image: '/printer7.svg',
+        title: 'Print job stuck in queue',
       },
       {
-        image: '/image8.svg',
-        title: 'Keyboard, mouse, touchpad, and clickpad issues',
+        image: '/printer8.svg',
+        title: 'Paper jam issues',
       },
       {
-        image: '/desktop.svg',
-        title: 'Perform an HP System Recovery',
+        image: '/printer9.svg',
+        title: 'HP Instant Ink issues',
       },{
-        image: '/image10.svg',
-        title: 'Wireless, wired, Bluetooth networking issues',
+        image: '/printer10.svg',
+        title: 'Carriage is jammed',
       },
       {
-        image: '/image11.svg',
-        title: 'Keyboard, mouse, touchpad, and clickpad issues',
+        image: '/printer11.svg',
+        title: 'Fax issues',
       },
       
     ];

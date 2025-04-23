@@ -2,8 +2,8 @@ import Image from "next/image";
 
 export default function Troubleshoot() {
   return (
-    <div className="bg-white min-h-screen flex flex-col items-center justify-center px-4 py-10">
-      <div className="flex flex-col lg:flex-row items-center justify-center max-w-7xl w-full mt-[-169px]">
+    <div className="bg-white h-[347px] flex flex-col items-center justify-center px-4 py-10">
+      <div className="flex flex-col lg:flex-row items-center justify-center max-w-7xl w-full ">
         {/* Left: Devices */}
         <div className="flex justify-center items-center gap-6 lg:w-1/2 mb-10 lg:mb-0">
           <Image
@@ -18,7 +18,7 @@ export default function Troubleshoot() {
         {/* Right: Text */}
        
         <div className="lg:w-1/2 text-center lg:text-left">
-        <p className="text-[40px] font- text-black mb-2 mt-[-73px]">Diagnose and solve</p>
+        <p className="text-[40px] font- text-black mb-2 ">Diagnose and solve</p>
   <div className="flex items-start justify-center lg:justify-start mb-4">
     {/* Chat Icon (Matching Screenshot) */}
     {/* <svg
@@ -52,14 +52,14 @@ export default function Troubleshoot() {
       </div>
 
       {/* Tabs */}
-      <div className="flex gap-10 mt-16 text-lg font-medium">
+      {/* <div className="flex gap-10 mt-16 text-lg font-medium">
         <button className="flex items-center gap-2 text-gray-700 hover:text-black">
           <span className="text-2xl">🖥</span> Computer Issues
         </button>
         <button className="flex items-center gap-2 text-blue-700 font-bold border-b-4 border-blue-700 pb-1">
           <span className="text-2xl">🖨</span> Printer Issues
         </button>
-      </div>
+      </div> */}
     </div>
   );
 }
